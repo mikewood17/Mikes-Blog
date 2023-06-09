@@ -10,7 +10,7 @@ export default async function BlogPage() {
       <h1>Destiny 2 Builds</h1>
       <ul className="blogList">
         {posts.map((post) => (
-          <li className="blogCard">
+          <li key={post.slug} className="blogCard">
             <Image src={post.image} alt="blog hero img" className="blogCardImg" width="300" height="300"></Image>
             <div className="blogCardContent">
               <Link className="blogTitle" href={`/blog/${post.slug}`}>
