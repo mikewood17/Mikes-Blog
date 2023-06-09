@@ -11,17 +11,254 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 5, 10, 25;
+    --background-end-rgb: 5, 10, 25;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+/* Helper styles */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.content {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/* Global Styling */
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/* Nav styling  */
+
+.heroImgContainer {
+  background: linear-gradient(0deg, rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.5)), url(../../public/images/header-img.webp);
+  min-width: 100%;
+  background-color: rgb(6, 110, 110);
+  height: 800px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.navSecond {
+  display: flex;
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+.revertLink {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+/* Banner Styles */
+
+.banner {
+  display: flex;
+  min-width: 100vw;
+  height: 800px;
+  background-color: rgb(42, 60, 115);
+  border-radius: 0em 0em 500em 500em / 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.bannerInfo {
+  background-color: rgb(42, 60, 115);
+  display: flex;
+  flex-direction: column;
+
+  margin-right: -100px;
+  margin-left: 0;
+  height: 100%;
+  width: 50%;
+  border-radius: 0 10em 10em 0em / 100%;
+  z-index: 2;
+}
+
+.bannerImgContainer {
+  width: 65%;
+}
+
+.bannerImg {
+  margin-right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  object-fit: cover;
+
+  border-radius: 0 0em 500em 0em / 50%;
+}
+@media (max-width: 660px) {
+  .banner {
+    flex-direction: column-reverse;
+    height: 900px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bannerImgContainer,
+  .bannerContent {
+    width: 100% !important;
+    height: 50%;
+    align-items: center !important;
+  }
+
+  .bannerImg {
+    border-radius: 0 0em 500em 500em / 50%;
+  }
+
+  .bannerContent {
+    margin-top: 40px !important;
+  }
+
+  .bannerInfo {
+    margin-right: 0;
+  }
+}
+
+.bannerContent {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: flex-start;
+  width: 60%;
+  margin: auto;
+}
+
+.bannerContent h2 {
+  font-size: 2.7em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.bannerContent p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.bannerActions {
+  display: flex;
+  align-items: baseline;
+}
+
+.bannerBtn {
+  padding: 13px;
+  border-radius: 8px;
+  background-color: rgb(83, 165, 237);
+  font-size: 1.2em;
+  margin-top: 10px;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.bannerBtn:hover {
+  cursor: pointer;
+  background-color: rgb(47, 115, 175);
+}
+
+/* Blog List Page Styles */
+
+.blogList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 767px) {
+  .blogList {
+    justify-content: space-evenly;
+  }
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #6868687e;
+  border-radius: 8px;
+  height: 500px;
+  width: 300px;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.blogCardImg {
+  height: 70%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px 5px 0 0;
+}
+
+.blogTitle {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.blogCardContent {
+  min-height: 30%;
+  padding: 20px;
+}
+
+/* About me Styles */
+
+.meImg {
+  border-radius: 50%;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Footer Styles */
+
+.footer {
+  margin-top: 60px;
+
+  background: linear-gradient(0deg, rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.5)), url(../../public/images/footer-img.jpg);
+
+  background-color: rgb(6, 110, 110);
+  height: 300px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
 }
