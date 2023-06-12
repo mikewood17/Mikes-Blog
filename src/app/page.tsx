@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bannerImgContainer">
-          <Image src="/images/BL-hero.jpg" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
+          <Image src="/images/SS-hero.jpg" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
         </div>
       </div>
       <div className="container content">
