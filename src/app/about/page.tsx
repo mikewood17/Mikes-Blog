@@ -36,7 +36,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="bannerImgContainer">
-          <Image src="/images/arc-hunter.png" alt="bannerImage" className="bannerImg" width="100" height="100"></Image>
+          <Image src="/images/arc-hunter.png" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
         </div>
       </div>
       <div className="container content">
