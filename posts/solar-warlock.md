@@ -7,7 +7,13 @@ desc: An update to Aztecross' Fullmetal Alchemist inspired build around the Colo
 
 ![Sunbracers Hero img](/images/sunbracers.jpg "Sunbracers D2")
 
-# Aztecross' Colonel Mustang Build
+# Aztecross' Colonel Mustang Build 2.0
+
+An update to Aztecross' Fullmetal Alchemist inspired build around the famous character Colonel Roy Mustang. He updated this build since season of the haunted in Lightfall to make it still viable today and is amongst one of his most famous builds thanks to its power fantasy mimicing that of a beloved anime character.
+
+## WHAT YOU'LL NEED
+
+![Contraverse Hold Exotic img](/images/solar-warlock-build.png "Contraverse Hold D2")
 
 ## HOW IT WORKS
 

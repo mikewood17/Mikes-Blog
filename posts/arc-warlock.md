@@ -9,6 +9,12 @@ desc: This Arc Warlock created by Mactics uses the Fallen Sunstar exotic for unb
 
 # Mactics Arc Warlock Build
 
+This Arc Warlock Build created by Mactics uses the Fallen Sunstar exotic for unbeleivable ability uptime and destructive capabilities which is unparalled in ad clear.
+
+## WHAT YOU'LL NEED
+
+![Fallen Sunstar Hero img](/images/arc-warlock-build.png "Fallen Sunstar D2")
+
 ## HOW IT WORKS
 
 The combination of Ionic Traces and Fallen Sunstar allow the Arc Warlock to spam abilities endlessly. This helmet boosts the ability return from Ionic Traces to a refund of 25% to grenade and melee energy and a refund of 30% to Rift energy.

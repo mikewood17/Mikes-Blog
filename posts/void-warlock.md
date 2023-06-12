@@ -9,6 +9,12 @@ desc: Void Warlock Build created by Mactics. This build boasts some of the stron
 
 # Mactics Void Contraverse Hold Warlock Build
 
+This Void Warlock Build created by Mactics boasts some of the strongest area-denial capabilties in the game through incredible grenade up-time and survivability from devour.
+
+## WHAT YOU'LL NEED
+
+![Contraverse Hold Exotic img](/images/voidwaler-build.png "Contraverse Hold D2")
+
 ## HOW IT WORKS
 
 Chaos Accelerant and Contraverse Hold work wonders together, and allow an overcharged Vortex Grenade to have a miniscule cooldown. A standard Vortex Grenade lasts 3.2 seconds, and when overcharged will last 4.2 seconds. This time bump works perfectly with Contraverse Hold because the 2000% grenade regeneration rate increase has an internal cooldown of 1.75 seconds. This duration increase will allow Contraverse Hold's effect to activate twice in one grenade.

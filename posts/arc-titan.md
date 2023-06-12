@@ -9,6 +9,12 @@ desc: Arc Titan Build created by Datto. This build uses the Point-Contact Cannon
 
 # Datto's Thunder God Titan Build
 
+This Arc Titan Build created by Datto uses the Point-Contact Cannon Brace exotic to live out your thunder God fantasies destroying everything that dares stand in your way with incredible up-time on your boosted melee ability.
+
+## WHAT YOU'LL NEED
+
+![No Backup Plans Hero img](/images/datto-arc-titan.png "No Backup Plans D2")
+
 ## HOW IT WORKS
 
 The newly buffed Point-Contact Cannon Brace has greatly increased the efficacy of Thunderclap. This is a very offensive build that relies on the melee ability to outright kill targets to refund itself and/or leaving enemies with a small amount of health to be quickly cleaned up. Melee Kickstart mods hasten the melee's cooldown when it does not kill an enemy as a contingency plan. The melee will also kickstart health regeneration due to the Knockout aspect. Survivability is supplemented by Electric Armor from the artifact and Spark of Resistance.

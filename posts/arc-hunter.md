@@ -7,7 +7,13 @@ desc: Arc Hunter build created by Mactics. Currently the most powerful build for
 
 ![Assassins Cowl Hero img](/images/AssassinsCowl.jpg "Assassins Cowl D2")
 
-# Assassins Arc Hunter
+# Assassins Cowl Arc Hunter
+
+This Arc Hunter build created by Mactics is currently the most powerful build for raw damage output and survivability in the game with amazing invisibilty up-time and single burst damage along with ad-clear potential from jolting,
+
+## WHAT YOU'LL NEED
+
+![Subclass build img](/images/mactics-AC.png "Assassins Cowl build")
 
 ## HOW IT WORKS
 

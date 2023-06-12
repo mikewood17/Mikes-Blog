@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 About
               </Link>
               <Link className="nav-link" href="/blog">
-                Blogs
+                Builds
               </Link>
             </div>
           </nav>

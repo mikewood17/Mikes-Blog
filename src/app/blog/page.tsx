@@ -11,13 +11,14 @@ export default async function BlogPage() {
       <ul className="blogList">
         {posts.map((post) => (
           <li key={post.slug} className="blogCard">
-            <Image src={post.image} alt="blog hero img" className="blogCardImg" width="500" height="500"></Image>
-            <div className="blogCardContent">
-              <Link className="blogTitle" href={`/blog/${post.slug}`}>
-                {post.title}
-              </Link>
-              <p>{post.desc}</p>
-            </div>
+            <Link href={`/blog/${post.slug}`}>
+              <Image src={post.image} alt="blog hero img" className="blogCardImg" width="500" height="500"></Image>
+
+              <div className="blogCardContent">
+                <h3 className="blogTitle">{post.title}</h3>
+                <p>{post.desc}</p>
+              </div>
+            </Link>
           </li>
         ))}
       </ul>

@@ -2,12 +2,18 @@
 title: Solar Hunter Build
 date: 2021-12-24
 image: /images/solar-hunter.jpg
-desc: Solar Hunter Build created by Aztecross. This build utilies oathkeepers in tandem with wishender for extended damage.
+desc: Solar Hunter Build created by Aztecross. This build utilises oathkeepers in tandem with wishender for extended damage.
 ---
 
 ![No Backup Plans Hero img](/images/oathkeepers.webp "No Backup Plans D2")
 
 # Aztecross' Solar Hunter Build
+
+This Solar Hunter Build created by Aztecross utilises oathkeepers in tandem with wishender for extended damage, healing and ability up-time.
+
+## WHAT YOU'LL NEED
+
+![Solar Hunter build setup img](/images/az-solar-hunter.png "solar hunter setup D2")
 
 ## HOW IT WORKS
 

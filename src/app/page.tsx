@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <div className="container content">
+      <div className="container content contentWidth">
         <h1 className="heading">Mikes Personal Home Page</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem
@@ -43,7 +43,7 @@ export default function Home() {
           <Image src="/images/SS-hero.jpg" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
         </div>
       </div>
-      <div className="container content">
+      <div className="container content contentWidth">
         <h1 className="heading">Lorem ipsum dolor</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem

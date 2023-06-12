@@ -9,6 +9,12 @@ desc: Solar Titan Build created by Mactics. Titans can spam fusion grenades too!
 
 # Mactics' Ashen Wake Titan Build
 
+Solar Titan Build created by Mactics. Warlocks had all the grenade fun for a while, but guess what? Titans can spam fusion grenades too! This once niche exotic is capable of tremendous power from mixing up grenade damage with the usual 'bonk' hammer titan build.
+
+## WHAT YOU'LL NEED
+
+![Solar titan subclass setup img](/images/solar-titan-build.png "Solar titan subclass setup D2")
+
 ## HOW IT WORKS
 
 Ashen Wake lets solar Titans throw endless Fusion Grenades by refunding grenade energy on kill. Fusion Grenades will also instantly explode on impact. Grenade energy is refunded based on the enemy type that is defeated with a grenade, from Grenade Kickstart mods, and from picking up Orbs of Power that are created from grenade via Firepower, kills after casting Barricade via Reaper, and 2 solar weapon kills via Solar Siphon. With all these avenues of grenade regeneration, you will be able to continuously throw Fusion Grenades on demand.

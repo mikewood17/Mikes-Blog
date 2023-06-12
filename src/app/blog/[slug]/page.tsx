@@ -41,10 +41,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <div className="headerContainer">
           <h1 className="header">{post.title}</h1>
           <div className="readContainer">
-            <p>This Blog has been read -</p>
+            <p>This Blog has been read: &nbsp;</p>
             {/* @ts-ignore-error Server Component */}
-            <PageViews kvKey={params.slug} />
-            <p>times.</p>
+            <PageViews className="viewTracker" kvKey={params.slug} />
+            <p> &nbsp; times.</p>
           </div>
         </div>
 

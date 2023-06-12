@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <div className="">
-      <div className="container content">
+      <div className="container content aboutWrapper">
         <h1>About Me</h1>
         <div className="aboutMeContainer">
           <Image className="meImg" src="/images/about-me.GIF" height="300" width="300" alt="me"></Image>
-          <p>
+          <p className="meTxt">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem
             porttitor laoreet. Praesent ut interdum orci, et elementum nibh. Cras ac lorem pharetra, mollis augue vel,
             eleifend velit. In lacinia bibendum pharetra. Sed vulputate nisi nisi, et vestibulum elit porta quis. Aenean ac
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <Image src="/images/arc-hunter.png" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
         </div>
       </div>
-      <div className="container content">
+      <div className="container content contentWidth">
         <h1>Lorem ipsum dolor</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem
