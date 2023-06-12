@@ -35,11 +35,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <main className="mx-auto max-w-4xl">
-      <h1 className="text-2xl">{post.title}</h1>
-      <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.body.html }} />
-      <br />
-      <div className="revertLink">
-        <Link href="/blog">Back to posts</Link>
+      <div className="container">
+        <h1 className="text-2xl">{post.title}</h1>
+        <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.body.html }} />
+        <br />
+        <div className="revertLink">
+          <Link href="/blog">Back to posts</Link>
+        </div>
       </div>
     </main>
   );

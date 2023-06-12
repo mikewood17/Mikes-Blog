@@ -245,8 +245,15 @@ h1 {
 
 .aboutMeContainer {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .aboutMeContainer {
+    flex-direction: column;
+  }
 }
 
 /* Footer Styles */
