@@ -40,7 +40,7 @@ export default function AboutPage() {
         <h1>More About Me</h1>
         <h3>What do you get when you cross a physiotherapist student with a global pandemic?</h3>
         <p>
-          According to my story an aspiring web developer. This meant I didn’t start my journey into the technological
+          According to my story an aspiring web developer. This meant I didn&apos;t start my journey into the technological
           industry until later in life, but I can confidently say this has been the best decision of my life as i feel as if
           ive truly found my passion. Initially, I attended Sheffield Hallam University with dreams of wanting to become a
           physiotherapist but realised it wasn't for me. So I moved to Norwich and during lockdown, I started my first piece
