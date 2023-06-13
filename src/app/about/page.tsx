@@ -13,7 +13,7 @@ export default function AboutPage() {
           <p className="meTxt">
             My Name is Michael Wood and I am training to become a web developer with a focus on front-end web development. I
             have completed the Netmatters Scion Coalition Bootcamp on full stack web development and now currently studying
-            under Tech educators learning how to use Next.js.
+            under Tech Educators learning how to use Next.js.
           </p>
         </div>
       </div>
@@ -41,16 +41,17 @@ export default function AboutPage() {
         <h3>What do you get when you cross a physiotherapist student with a global pandemic?</h3>
         <p>
           According to my story an aspiring web developer. This meant I didn&apos;t start my journey into the technological
-          industry until later in life, but I can confidently say this has been the best decision of my life as i feel as if
-          ive truly found my passion. Initially, I attended Sheffield Hallam University with dreams of wanting to become a
-          physiotherapist but realised it wasn't for me. So I moved to Norwich and during lockdown, I started my first piece
-          of coding by doing a javascript course on Udemy. This was a big step for me as the most programming I had ever done
-          before was some simple minecraft and skyrim mods. This led me to enrolling on the Netmatters Scion Coalition
-          Bootcamp where I completed their intensive full stack training program. It didnt stop there however, I have since
-          been learning more on treehouse learn to code and udemy to further my skills. I am currently undertaking a Next.js
-          course through Tech educators. My reason for wanting to become a front-end developer is I believe it merges my two
-          strongest skills which are creativity and problem-solving along with my passion for wanting to help people. I
-          believe this comes from my keen interest in technology whether through gaming or creating digital art.
+          industry until later in life, but I can confidently say this has been the best decision of my life as I feel as if
+          I&apos;ve truly found my passion. Initially, I attended Sheffield Hallam University with dreams of wanting to
+          become a physiotherapist but realised it wasn&apos;t for me. So I moved to Norwich and during lockdown, I started
+          my first piece of coding by doing a javascript course on Udemy. This was a big step for me as the most programming
+          I had ever done before was some simple Minecraft and Skyrim mods. This led me to enrolling on the Netmatters Scion
+          Coalition Bootcamp where I completed their intensive full stack training program. It didn&apos;t stop there
+          however, I have since been learning more on treehouse learn to code and udemy to further my skills. I am currently
+          undertaking a Next.js course through Tech educators. My reason for wanting to become a front-end developer is I
+          believe it merges my two strongest skills which are creativity and problem-solving along with my passion for
+          wanting to help people. I believe this comes from my keen interest in technology whether through gaming or creating
+          digital art.
         </p>
       </div>
       <div className="container content">
