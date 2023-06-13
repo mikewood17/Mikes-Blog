@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { WEBSITE_URL } from "config";
 
 async function getMessage() {
-  const res = await fetch("http://localhost:3000/api/greet", { next: { revalidate: 5 } });
+  const res = await fetch(`${WEBSITE_URL}/api/greet`, { next: { revalidate: 5 } });
   return res.json();
 }
 
