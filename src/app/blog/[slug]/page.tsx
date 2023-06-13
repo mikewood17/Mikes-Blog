@@ -4,7 +4,9 @@ import React from "react";
 import Link from "next/link";
 import { getPostBySlug, getPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
+import { format, parseISO } from "date-fns";
 import PageViews from "@/app/components/PageViews";
+import Comments from "@/app/components/Comments";
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const post = await getPostBySlug(params.slug);
@@ -40,6 +42,9 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <div className="container">
         <div className="headerContainer">
           <h1 className="header">{post.title}</h1>
+          <time dateTime={post.date} className="mb-1 text-xs text-gray-200">
+            {format(parseISO(post.date), "LLLL d, yyyy")}
+          </time>
           <div className="readContainer">
             <p>This Blog has been read: &nbsp;</p>
             {/* @ts-ignore-error Server Component */}
@@ -52,6 +57,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <br />
         <div className="revertLink">
           <Link href="/blog">Back to posts</Link>
+        </div>
+        <div className="commentsCont">
+          {/* @ts-ignore */}
+          <Comments slug={params.slug} />
         </div>
       </div>
     </main>

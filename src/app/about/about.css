@@ -1,0 +1,36 @@
+/* ABOUT PAGE STYLES */
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  border: 2px solid #6868687e;
+  border-radius: 8px;
+}
+
+.projectContent {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.projectImg {
+  max-width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+
+@media (min-width: 550px) {
+  .projectCard {
+    flex-direction: row !important;
+  }
+
+  .projectContent {
+    max-width: 50% !important;
+  }
+
+  .projectImg {
+    max-width: 50%;
+    border-radius: 8px 0px 0px 8px;
+  }
+}

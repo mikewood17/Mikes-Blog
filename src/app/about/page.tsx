@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import "../about/about.css";
 
 export default function AboutPage() {
   return (
@@ -10,13 +11,9 @@ export default function AboutPage() {
         <div className="aboutMeContainer">
           <Image className="meImg" src="/images/about-me.GIF" height="300" width="300" alt="me"></Image>
           <p className="meTxt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem
-            porttitor laoreet. Praesent ut interdum orci, et elementum nibh. Cras ac lorem pharetra, mollis augue vel,
-            eleifend velit. In lacinia bibendum pharetra. Sed vulputate nisi nisi, et vestibulum elit porta quis. Aenean ac
-            ex dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque placerat
-            ultrices ultrices. Vivamus ullamcorper, urna eu vestibulum hendrerit, felis augue ultrices quam, eget dapibus
-            mauris neque non mi. Aliquam in odio ultricies, suscipit magna id, laoreet justo. Nulla auctor purus lobortis
-            massa viverra interdum. Aliquam quis mollis nunc. Sed aliquet condimentum erat.
+            My Name is Michael Wood and I am training to become a web developer with a focus on front-end web development. I
+            have completed the Netmatters Scion Coalition Bootcamp on full stack web development and now currently studying
+            under Tech educators learning how to use Next.js.
           </p>
         </div>
       </div>
@@ -40,26 +37,67 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="container content contentWidth">
-        <h1>Lorem ipsum dolor</h1>
+        <h1>More About Me</h1>
+        <h3>What do you get when you cross a physiotherapist student with a global pandemic?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis ullamcorper leo. Aenean mattis eros nec lorem
-          porttitor laoreet. Praesent ut interdum orci, et elementum nibh. Cras ac lorem pharetra, mollis augue vel, eleifend
-          velit. In lacinia bibendum pharetra. Sed vulputate nisi nisi, et vestibulum elit porta quis. Aenean ac ex dolor.
-          Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque placerat ultrices
-          ultrices. Vivamus ullamcorper, urna eu vestibulum hendrerit, felis augue ultrices quam, eget dapibus mauris neque
-          non mi. Aliquam in odio ultricies, suscipit magna id, laoreet justo. Nulla auctor purus lobortis massa viverra
-          interdum. Aliquam quis mollis nunc. Sed aliquet condimentum erat. Suspendisse potenti. In hac habitasse platea
-          dictumst. Curabitur gravida sed justo a maximus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Aliquam vulputate ipsum sit amet dapibus blandit. Proin et venenatis nibh.
-          Suspendisse varius feugiat massa sed rutrum. Etiam venenatis augue id nibh porttitor, at faucibus neque placerat.
-          Donec quis mauris viverra leo venenatis pharetra consequat ut purus. Phasellus non consequat lorem. Nam
-          sollicitudin rutrum turpis, et lobortis dolor pretium vel. Quisque vel pretium nisi. Nullam lobortis felis sit amet
-          molestie gravida. Suspendisse mattis fringilla pretium. Mauris vel sodales magna. Pellentesque vel nunc id velit
-          blandit ultrices sit amet pellentesque nibh. Phasellus nec iaculis lacus. Morbi in dui vehicula, interdum nisi eu,
-          commodo odio. Pellentesque cursus nisi in lacinia pulvinar. Nunc et ipsum vitae justo congue tempor. Aenean
-          convallis lacinia eros, a luctus purus auctor in. Aenean dignissim vel eros a tempor. Nulla massa eros, fermentum
-          ut enim at, luctus consectetur risus. Quisque sodales est at felis consequat dictum. Quisque sit amet nibh velit.
+          According to my story an aspiring web developer. This meant I didn’t start my journey into the technological
+          industry until later in life, but I can confidently say this has been the best decision of my life as i feel as if
+          ive truly found my passion. Initially, I attended Sheffield Hallam University with dreams of wanting to become a
+          physiotherapist but realised it wasn't for me. So I moved to Norwich and during lockdown, I started my first piece
+          of coding by doing a javascript course on Udemy. This was a big step for me as the most programming I had ever done
+          before was some simple minecraft and skyrim mods. This led me to enrolling on the Netmatters Scion Coalition
+          Bootcamp where I completed their intensive full stack training program. It didnt stop there however, I have since
+          been learning more on treehouse learn to code and udemy to further my skills. I am currently undertaking a Next.js
+          course through Tech educators. My reason for wanting to become a front-end developer is I believe it merges my two
+          strongest skills which are creativity and problem-solving along with my passion for wanting to help people. I
+          believe this comes from my keen interest in technology whether through gaming or creating digital art.
         </p>
+      </div>
+      <div className="container content">
+        <h1>My Projects</h1>
+        <div className="projectsCont">
+          <ul className="projectsList">
+            <li className="projectCard">
+              <Image
+                src="/images/arc-hunter.png"
+                className="projectImg"
+                height="500"
+                width="500"
+                alt="project Image"
+              ></Image>
+              <div className="projectContent">
+                <h3>Project 1</h3>
+                <p>Project 1</p>
+              </div>
+            </li>
+            <li className="projectCard">
+              <Image
+                src="/images/arc-hunter.png"
+                className="projectImg"
+                height="500"
+                width="500"
+                alt="project Image"
+              ></Image>
+              <div className="projectContent">
+                <h3>Project 2</h3>
+                <p>Project 2</p>
+              </div>
+            </li>
+            <li className="projectCard">
+              <Image
+                src="/images/arc-hunter.png"
+                className="projectImg"
+                height="500"
+                width="500"
+                alt="project Image"
+              ></Image>
+              <div className="projectContent">
+                <h3>Project 3</h3>
+                <p>Project 3</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+async function getMessage() {
+  const res = await fetch("http://localhost:3000/api/greet", { next: { revalidate: 5 } });
+  return res.json();
+}
+
+export default async function Home() {
+  const message = getMessage();
+
   return (
     <main>
       <div className="container content contentWidth">
