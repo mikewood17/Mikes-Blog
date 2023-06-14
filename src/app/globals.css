@@ -388,9 +388,15 @@ h1 {
   .toolList li {
     max-width: 80%;
   }
+}
 
-  .toolCard {
-    height: 350px;
+@media (max-width: 550px) {
+  .toolContent {
+    padding: 15px !important;
+  }
+
+  .toolContent p {
+    font-size: 0.9em !important;
   }
 }
 

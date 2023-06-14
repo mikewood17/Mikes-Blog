@@ -52,7 +52,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             <p> &nbsp; times.</p>
           </div>
         </div>
-
         <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.body.html }} />
         <br />
         <div className="revertLink">
