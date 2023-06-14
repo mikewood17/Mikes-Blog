@@ -1,57 +1,32 @@
-"use client";
-
 // Imports
 
 import React, { useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { WEBSITE_URL } from "config";
+import { revalidatePath } from "next/cache";
+import { saveComment } from "../../lib/comments";
+import FormStatusButton from "./FormStatusButton";
 
 // Functions
 
-export function CommentForm({ postSlug }: { postSlug: string }) {
-  // Router Hook to trigger refresh
-  const router = useRouter();
+export default function CommentForm({ slug }: { slug: string }) {
+  async function handleSubmitFormAction(formData: FormData) {
+    // function that runs the server
+    "use server";
 
-  // the react useTransition hook to manage client/server data upodates
-  // without refreshing the page. isPending gives us the ability to know
-  // show a spinner or similar
-  const [isPending, startTransition] = useTransition();
+    //get the form data values
+    const username = formData.get("username") as string;
+    const comment = formData.get("comment") as string;
 
-  // runs when onSubmit event fires, uses fetch to send a POST request to
-  // our API comment route, and then refreshes the page data to show the comment
-  async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
-    console.log("submitting the form");
+    // save the comment using our saevComment function in our library (note we are note using the API route anymore)
+    const uuid = await saveComment(username, comment, slug);
 
-    // prevent the form submitting and redirecting us to the action location
-    event.preventDefault();
-
-    // get form input values
-    // @ts-ignore
-    const username = event.target["username"].value;
-    // @ts-ignore
-    const comment = event.target["comment"].value;
-
-    // create a FormData object and append our values to send to the API
-    const formData = new FormData();
-    formData.append("username", username);
-    formData.append("comment", comment);
-
-    //POST the FormData to the API
-    const res = await fetch(`${WEBSITE_URL}/api/comments/${postSlug}`, {
-      body: formData,
-      method: "POST",
-    });
-
-    // Refresh the current route and fetch new data from the server without
-    // losing client-side browser or React state.
-    startTransition(() => {
-      router.refresh();
-      console.log("reloaded the page data");
-    });
+    // revalidate the post page to show new comment
+    revalidatePath(`/blog/${slug}`);
   }
 
   return (
-    <form className="formMain" onSubmit={handleFormSubmit}>
+    <form className="formMain" action={handleSubmitFormAction}>
       <div className="formInputs">
         <div className="formSection">
           <label htmlFor="username">Name</label>
@@ -62,9 +37,7 @@ export function CommentForm({ postSlug }: { postSlug: string }) {
           <textarea name="comment" cols={30} rows={10} className="formControl" />
         </div>
       </div>
-      <button type="submit" disabled={isPending}>
-        {isPending ? "Submitting Comment" : "Submit Comment"}
-      </button>
+      <FormStatusButton />
     </form>
   );
 }

@@ -1,5 +1,5 @@
 import { WEBSITE_URL } from "config";
-import { CommentForm } from "./CommentForm";
+import CommentForm from "./CommentForm";
 
 export default async function Comments({ slug }: { slug: string }) {
   const commentsRes = await fetch(`${WEBSITE_URL}/api/comments/${slug}`, { next: { revalidate: 0 } });
@@ -12,7 +12,7 @@ export default async function Comments({ slug }: { slug: string }) {
           <h2>Comments</h2>
           <h3>We Would Love To Hear From You! Please Leave A Comment</h3>
         </div>
-        <CommentForm postSlug={slug} />
+        <CommentForm slug={slug} />
       </div>
 
       {comments && (
