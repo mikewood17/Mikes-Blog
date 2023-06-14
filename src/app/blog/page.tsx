@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { getPostBySlug, getPosts } from "@/lib/posts";
+import { getPosts } from "@/lib/posts";
 import Link from "next/link";
 
 export default async function BlogPage() {

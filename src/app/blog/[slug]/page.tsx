@@ -38,7 +38,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-4xl">
       <div className="container">
         <div className="headerContainer">
           <h1 className="header">{post.title}</h1>
@@ -63,6 +63,6 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <Comments slug={params.slug} />
         </div>
       </div>
-    </main>
+    </div>
   );
 }

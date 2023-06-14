@@ -54,48 +54,76 @@ export default function AboutPage() {
           digital art.
         </p>
       </div>
-      <div className="container content">
+      <div className="projectWrapper container content">
         <h1>My Projects</h1>
         <div className="projectsCont">
           <ul className="projectsList">
-            <li className="projectCard">
-              <Image
-                src="/images/arc-hunter.png"
-                className="projectImg"
-                height="500"
-                width="500"
-                alt="project Image"
-              ></Image>
-              <div className="projectContent">
-                <h3>Project 1</h3>
-                <p>Project 1</p>
-              </div>
+            <li>
+              <Link className="projectCard" href="#">
+                <Image
+                  src="/images/project-1.png"
+                  className="projectImg"
+                  height="500"
+                  width="500"
+                  alt="project Image"
+                ></Image>
+                <div className="projectContent">
+                  <h3>Netmatters Mock Website</h3>
+                  <p>
+                    This is a Mock of the official Netmatters website which was used as my master project whilst attending
+                    the bootcamp to showcase the use of multiple languages working together in tendem. It includes a working
+                    contact form which is linked to a database, a responesive layout and design, working side menu and news
+                    cards with its content provided through the database using PHP.
+                  </p>
+                  <p>
+                    <small>Laguages used: HTML, CSS, SASS/SCSS, JavaScript, JQuery, PHP, SQL, MySQL</small>
+                  </p>
+                </div>
+              </Link>
             </li>
-            <li className="projectCard">
-              <Image
-                src="/images/arc-hunter.png"
-                className="projectImg"
-                height="500"
-                width="500"
-                alt="project Image"
-              ></Image>
-              <div className="projectContent">
-                <h3>Project 2</h3>
-                <p>Project 2</p>
-              </div>
+            <li>
+              <Link className="projectCard" href="#">
+                <Image
+                  src="/images/Project-2.png"
+                  className="projectImg"
+                  height="500"
+                  width="500"
+                  alt="project Image"
+                ></Image>
+                <div className="projectContent">
+                  <h3>Random Image Generator with Email Assign</h3>
+                  <p>
+                    This project is a site which displays a random image to be assigned to an email displaying them in a
+                    container to that designated email. It includes a working dropdown menu to switch between inputted emails
+                    and see which selected images have been designated to their specific emails
+                  </p>
+                  <p>
+                    <small>Languages used: HTML, CSS, SASS/SCSS, JavaScript, JQuery</small>
+                  </p>
+                </div>
+              </Link>
             </li>
-            <li className="projectCard">
-              <Image
-                src="/images/arc-hunter.png"
-                className="projectImg"
-                height="500"
-                width="500"
-                alt="project Image"
-              ></Image>
-              <div className="projectContent">
-                <h3>Project 3</h3>
-                <p>Project 3</p>
-              </div>
+            <li>
+              <Link className="projectCard" href="#">
+                <Image
+                  src="/images/wordpress-project.jpg"
+                  className="projectImg"
+                  height="500"
+                  width="500"
+                  alt="project Image"
+                ></Image>
+                <div className="projectContent">
+                  <h3>Wordpress Project</h3>
+                  <p>
+                    This site was my first run through using wordpress and boasts a large amount of webpages which are all
+                    based around my favourite game of Destiny 2. It comes with a working contact form, responsive design and
+                    news section all created in Wordpress and Elementor.
+                  </p>
+                  <p>
+                    <small>Languages used: Wordpress, PHP, SQL, MySQL, CSS, HTML</small>
+                  </p>
+                </div>
+              </Link>
             </li>
           </ul>
         </div>
