@@ -103,7 +103,7 @@ export default async function BlogPage() {
                   ></Image>
                 </div>
                 <div className="toolContent">
-                  <h3>Ishtar Commander</h3>
+                  <h3>Ishtar</h3>
                   <p>
                     This Mobile App is a must need for any guardian. A sleek and easy way to transfer gear between each of
                     your characters and vault seemlessly.

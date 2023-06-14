@@ -1,6 +1,6 @@
 import postcss from "postcss";
 import "../[slug]/blogs.css";
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import { getPostBySlug, getPosts } from "@/lib/posts";
 import { notFound } from "next/navigation";
@@ -58,8 +58,10 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <Link href="/blog">Back to posts</Link>
         </div>
         <div className="commentsCont">
-          {/* @ts-ignore */}
-          <Comments slug={params.slug} />
+          <Suspense fallback="Loading comments...">
+            {/* @ts-ignore */}
+            <Comments slug={params.slug} />
+          </Suspense>
         </div>
       </div>
     </div>
