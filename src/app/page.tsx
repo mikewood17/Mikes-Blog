@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { WEBSITE_URL } from "config";
 
 export default async function Home() {
+  console.log(WEBSITE_URL);
+
   return (
     <main>
       <div className="container content contentWidth">
