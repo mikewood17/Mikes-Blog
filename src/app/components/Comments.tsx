@@ -1,11 +1,14 @@
 import { WEBSITE_URL } from "config";
 import CommentForm from "./CommentForm";
 import Image from "next/image";
+import { currentUser } from "@clerk/nextjs";
 
 export default async function Comments({ slug }: { slug: string }) {
   const commentsRes = await fetch(`${WEBSITE_URL}/api/comments/${slug}`, { next: { revalidate: 0 } });
   const { comments } = await commentsRes.json();
 
+  const user = currentUser();
+  console.log("this is the user", user);
   return (
     <div className="formZone">
       <div className="formContainer">

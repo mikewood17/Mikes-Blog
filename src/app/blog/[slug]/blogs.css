@@ -1,3 +1,9 @@
+.buildContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .headerContainer {
   display: flex;
   align-items: center;
@@ -26,6 +32,10 @@
   border-radius: 10px;
   border: 2px solid #000;
   box-shadow: 0 0.5px 0.5px rgba(0, 0, 0, 0.08), 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.formZone {
+  padding: 0px !important;
 }
 
 .formZone h2 {
@@ -82,6 +92,10 @@ h2 {
   background-color: rgb(45, 48, 54);
   border-radius: 8px;
   padding: 20px;
+}
+
+.commentsCont {
+  max-width: 1000px;
 }
 
 .commentAuthor {

@@ -38,26 +38,29 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="items-center">
       <div className="container">
-        <div className="headerContainer">
-          <h1 className="header">{post.title}</h1>
-          <time dateTime={post.date} className="mb-1 text-xs text-gray-200">
-            {format(parseISO(post.date), "LLLL d, yyyy")}
-          </time>
-          <div className="readContainer">
-            <p>This Blog has been read: &nbsp;</p>
-            {/* @ts-ignore-error Server Component */}
-            <PageViews className="viewTracker" kvKey={params.slug} />
-            <p> &nbsp; times.</p>
+        <div className="buildContent">
+          <div className="headerContainer">
+            <h1 className="header">{post.title}</h1>
+            <time dateTime={post.date} className="mb-1 text-xs text-gray-200">
+              {format(parseISO(post.date), "LLLL d, yyyy")}
+            </time>
+            <div className="readContainer">
+              <p>This Blog has been read: &nbsp;</p>
+              {/* @ts-ignore-error Server Component */}
+              <PageViews className="viewTracker" kvKey={params.slug} />
+              <p> &nbsp; times.</p>
+            </div>
+          </div>
+          <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.body.html }} />
+          <br />
+          <div className="revertLink">
+            <Link href="/blog">Back to posts</Link>
           </div>
         </div>
-        <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: post.body.html }} />
-        <br />
-        <div className="revertLink">
-          <Link href="/blog">Back to posts</Link>
-        </div>
-        <div className="commentsCont">
+
+        <div className="commentsCont container">
           <Suspense fallback="Loading comments...">
             {/* @ts-ignore */}
             <Comments slug={params.slug} />
