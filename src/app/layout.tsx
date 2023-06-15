@@ -7,6 +7,7 @@ import kv from "@vercel/kv";
 import PageViews from "@/app/components/PageViews";
 import { ClerkProvider } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs";
 
 // Fonts
 
@@ -22,7 +23,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const user = await currentUser();
+
   return (
     <ClerkProvider>
       <html lang="en">
@@ -44,7 +47,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link className="nav-link" href="/blog">
                   Builds
                 </Link>
-                <UserButton afterSignOutUrl="/" />
+                {user ? (
+                  <UserButton afterSignOutUrl="/" />
+                ) : (
+                  <Link href="/sign-in" className="nav-link">
+                    Sign In
+                  </Link>
+                )}
               </div>
             </nav>
             <div className="filter"></div>

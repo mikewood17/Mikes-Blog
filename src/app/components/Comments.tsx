@@ -1,14 +1,14 @@
 import { WEBSITE_URL } from "config";
 import CommentForm from "./CommentForm";
-import Image from "next/image";
 import { currentUser } from "@clerk/nextjs";
+import { handleSubmitFormAction } from "../actions/commentAction";
 
 export default async function Comments({ slug }: { slug: string }) {
   const commentsRes = await fetch(`${WEBSITE_URL}/api/comments/${slug}`, { next: { revalidate: 0 } });
   const { comments } = await commentsRes.json();
 
-  const user = currentUser();
-  console.log("this is the user", user);
+  const user = await currentUser();
+  console.log("this is the user", user?.username);
   return (
     <div className="formZone">
       <div className="formContainer">
@@ -16,7 +16,8 @@ export default async function Comments({ slug }: { slug: string }) {
           <h2>Comments</h2>
           <h3>We Would Love To Hear From You! Please Leave A Comment</h3>
         </div>
-        <CommentForm slug={slug} />
+        {/* @ts-ignore */}
+        <CommentForm slug={slug} username={user?.username} saveCommentAction={handleSubmitFormAction} />
       </div>
 
       {comments && (

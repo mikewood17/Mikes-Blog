@@ -404,6 +404,13 @@ h1 {
     font-size: 0.9em !important;
   }
 }
+/* SIGN UP STYLES */
+
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Footer Styles */
 

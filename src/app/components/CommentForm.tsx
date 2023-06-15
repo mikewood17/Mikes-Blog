@@ -1,36 +1,32 @@
 // Imports
+"use client";
 
+import { handleSubmitFormAction } from "../actions/commentAction";
 import React, { useTransition } from "react";
-import { useRouter } from "next/navigation";
-import { WEBSITE_URL } from "config";
-import { revalidatePath } from "next/cache";
-import { saveComment } from "../../lib/comments";
 import FormStatusButton from "./FormStatusButton";
+import shortUUID from "short-uuid";
 
 // Functions
 
-export default function CommentForm({ slug }: { slug: string }) {
-  async function handleSubmitFormAction(formData: FormData) {
-    // function that runs the server
-    "use server";
+type CommentFormProps = {
+  slug: string;
+  username: string;
+  saveCommentAction: (formData: FormData, slug: string) => Promise<shortUUID.SUUID>;
+};
 
-    //get the form data values
-    const username = formData.get("username") as string;
-    const comment = formData.get("comment") as string;
-
-    // save the comment using our saevComment function in our library (note we are note using the API route anymore)
-    const uuid = await saveComment(username, comment, slug);
-
-    // revalidate the post page to show new comment
-    revalidatePath(`/blog/${slug}`);
+export default async function CommentForm({ slug, username, saveCommentAction }: CommentFormProps) {
+  async function handleForm(formData: FormData) {
+    const uuid = await saveCommentAction(formData, slug);
+    console.log("comment saved with uuid and reset form");
   }
 
   return (
-    <form className="formMain" action={handleSubmitFormAction}>
+    <form className="formMain" action={handleForm}>
       <div className="formInputs">
         <div className="formSection">
-          <label htmlFor="username">Name</label>
-          <input type="text" name="username" className="formControl" />
+          <p>
+            Commenting as <strong>{username}</strong>
+          </p>
         </div>
         <div className="formSection">
           <label htmlFor="comment">Comment</label>
