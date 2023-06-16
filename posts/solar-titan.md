@@ -3,6 +3,8 @@ title: Solar Titan Build
 date: 2021-12-24
 image: /images/solar-titan.jpg
 desc: Solar Titan Build created by Mactics. Titans can spam fusion grenades too!
+theClass: titan
+subclass: solar
 ---
 
 ![No Backup Plans Hero img](/images/ashen-wake.webp "No Backup Plans D2")

@@ -3,6 +3,8 @@ title: Void Titan Build
 date: 2021-12-24
 image: /images/void-titan.png
 desc: Void Titan Build created by Datto. This build uses the No Backup Plan exotic to live out your shotgun power fantasies.
+theClass: titan
+subclass: void
 ---
 
 ![No Backup Plans Hero img](/images/NoBackupPlans.jpg "No Backup Plans D2")

@@ -3,14 +3,61 @@ import Image from "next/image";
 import { getPosts } from "@/lib/posts";
 import Link from "next/link";
 
-export default async function BlogPage() {
+export default async function BlogPage({ searchParams }: { searchParams: { [key: string]: string } }) {
   const posts = getPosts();
+
+  let thePosts = posts;
+
+  if (searchParams.filter) {
+    // @ts-ignore
+    thePosts = posts.filter((post) => post[searchParams.filterCat] == searchParams.filter);
+    console.log(searchParams.filter);
+  } else {
+    thePosts = posts;
+  }
+
   return (
     <div>
       <div className="container content blogListContainer">
         <h1>Destiny 2 Builds</h1>
+        <div className="keyContainer">
+          <ul className="classList">
+            <li>
+              <Link className="hunter" href="/blog?filter=hunter&filterCat=theClass">
+                Hunter
+              </Link>
+            </li>
+            <li>
+              <Link className="titan" href="/blog?filter=titan&filterCat=theClass">
+                Titan
+              </Link>
+            </li>
+            <li>
+              <Link className="warlock" href="/blog?filter=warlock&filterCat=theClass">
+                Warlock
+              </Link>
+            </li>
+          </ul>
+          <ul className="subclassList">
+            <li>
+              <Link className="arc" href="/blog?filter=arc&filterCat=subclass">
+                Arc
+              </Link>
+            </li>
+            <li>
+              <Link className="solar" href="/blog?filter=solar&filterCat=subclass">
+                Solar
+              </Link>
+            </li>
+            <li>
+              <Link className="void" href="/blog?filter=void&filterCat=subclass">
+                Void
+              </Link>
+            </li>
+          </ul>
+        </div>
         <ul className="blogList">
-          {posts.map((post) => (
+          {thePosts.map((post) => (
             <li key={post.slug} className="blogCard">
               <Link href={`/blog/${post.slug}`}>
                 <Image src={post.image} alt="blog hero img" className="blogCardImg" width="500" height="500"></Image>
@@ -23,6 +70,9 @@ export default async function BlogPage() {
             </li>
           ))}
         </ul>
+        <Link className="viewAll" href="/blog">
+          View All
+        </Link>
       </div>
       <div className="contentCover">
         <div className="container content toolListContainer">

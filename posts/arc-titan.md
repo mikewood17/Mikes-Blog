@@ -3,6 +3,8 @@ title: Arc Titan Build
 date: 2021-12-24
 image: /images/arc-titan.jpg
 desc: Arc Titan Build created by Datto. This build uses the Point-Contact Cannon Brace exotic to live out your thunder God fantasies.
+theClass: titan
+subclass: arc
 ---
 
 ![No Backup Plans Hero img](/images/PCCB-exotic.jpg "No Backup Plans D2")

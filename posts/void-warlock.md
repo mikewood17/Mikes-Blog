@@ -3,6 +3,8 @@ title: Void Warlock Build
 date: 2021-12-24
 image: /images/warlock-void.jpg
 desc: Void Warlock Build created by Mactics. This build boasts some of the strongest area-denial capabilties in the game.
+theClass: warlock
+subclass: void
 ---
 
 ![Contraverse Hold Exotic img](/images/Contraverse-Hold.jpeg "Contraverse Hold D2")

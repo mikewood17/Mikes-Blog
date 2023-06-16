@@ -19,16 +19,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-// export async function generateStaticParams() {
-//   // get the posts
-//   const posts = getPosts();
-
-//   // return an array of props objects that will be passed to
-//   // our page component one by one, generating a unique page
-//   // (in the example we use the post object, hard coded to more clearly show what is returned)
-//   return [{ slug: "my-first-post" }, { slug: "my-second-post" }, { slug: "my-third-post" }];
-// }
-
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
 

@@ -3,6 +3,8 @@ title: Solar Warlock Build
 date: 2021-12-24
 image: /images/solar-warlock.jpg
 desc: An update to Aztecross' Fullmetal Alchemist inspired build around the Colonel Mustang Fantasy.
+theClass: warlock
+subclass: solar
 ---
 
 ![Sunbracers Hero img](/images/sunbracers.jpg "Sunbracers D2")

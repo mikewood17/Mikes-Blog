@@ -3,6 +3,8 @@ title: Arc Warlock Build
 date: 2021-12-24
 image: /images/arc-warlock.jpg
 desc: This Arc Warlock created by Mactics uses the Fallen Sunstar exotic for unbeleivable ability uptime and destructive capabilities.
+theClass: warlock
+subclass: arc
 ---
 
 ![Fallen Sunstar Hero img](/images/fallen-sunstar.jpg "Fallen Sunstar D2")

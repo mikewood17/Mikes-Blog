@@ -5,9 +5,10 @@ import { Cabin } from "next/font/google";
 import Link from "next/link";
 import kv from "@vercel/kv";
 import PageViews from "@/app/components/PageViews";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignIn } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 
 // Fonts
 
@@ -27,7 +28,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const user = await currentUser();
 
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: {
+          colorPrimary: "rgb(83, 165, 237)",
+        },
+      }}
+    >
       <html lang="en">
         <body className={cabin.className}>
           <div className="heroImgContainer">
@@ -50,7 +58,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 {user ? (
                   <UserButton afterSignOutUrl="/" />
                 ) : (
-                  <Link href="/sign-in" className="nav-link">
+                  <Link href="/sign-in#signIn" className="nav-link">
                     Sign In
                   </Link>
                 )}

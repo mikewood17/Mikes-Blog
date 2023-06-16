@@ -3,6 +3,8 @@ title: Arc Hunter Build
 date: 2021-12-24
 image: /images/arc-hunter.png
 desc: Arc Hunter build created by Mactics. Currently the most powerful build for raw damage output and survivability.
+theClass: hunter
+subclass: arc
 ---
 
 ![Assassins Cowl Hero img](/images/AssassinsCowl.jpg "Assassins Cowl D2")

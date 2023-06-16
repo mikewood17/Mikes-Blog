@@ -3,6 +3,8 @@ title: Void Hunter Build
 date: 2021-12-24
 image: /images/void-hunter-hero.jpg
 desc: Void Hunter Build created by Mactics. This build uses the Gyrfalcons to combine stealth with high damage and ad clear.
+theClass: hunter
+subclass: void
 ---
 
 ![Assassins Cowl Hero img](/images/destiny-2-gyrfalcons-hauberk-build.jpg "Assassins Cowl D2")
