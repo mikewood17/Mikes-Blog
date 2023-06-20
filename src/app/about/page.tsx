@@ -42,8 +42,8 @@ export default function AboutPage() {
             <h2>My Projects</h2>
             <p>
               Here you will find my portfolio of projects, some personal and some created whilst on bootcamp courses. I never
-              though a year ago I would be able to create sites like this and now it truly is my passion. This website you're
-              on currently is also a project I created through Next.js and Typescript whilst on a course from{" "}
+              though a year ago I would be able to create sites like this and now it truly is my passion. This website
+              you&apos;re on currently is also a project I created through Next.js and Typescript whilst on a course from{" "}
               <Link className="colorAccent" href="https://techeducators.co.uk/">
                 Tech Educators
               </Link>

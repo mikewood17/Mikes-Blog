@@ -29,7 +29,7 @@ export default async function Home() {
             </p>
             <p>
               I am a creative thinker who loves to design whatever my ADHD brain comes up with. This usually includes tattoo
-              styled designs based around other interests. I'm also a big sports fan who loves nothing more than sitting
+              styled designs based around other interests. I&apos;m also a big sports fan who loves nothing more than sitting
               infront of red-zone for hours watching the NFL or staying up late to catch my favourite NBA team the Toronto
               Raptors play.
             </p>
