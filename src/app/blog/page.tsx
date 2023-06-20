@@ -41,17 +41,27 @@ export default async function BlogPage({ searchParams }: { searchParams: { [key:
           <ul className="subclassList">
             <li>
               <Link className="arc" href="/blog?filter=arc&filterCat=subclass">
-                Arc
+                <Image src="/images/arc.webp" height="20" width="20" alt="arc subclass icon"></Image>
               </Link>
             </li>
             <li>
               <Link className="solar" href="/blog?filter=solar&filterCat=subclass">
-                Solar
+                <Image src="/images/solar.webp" height="20" width="20" alt="solar subclass icon"></Image>
               </Link>
             </li>
             <li>
               <Link className="void" href="/blog?filter=void&filterCat=subclass">
-                Void
+                <Image src="/images/void.webp" height="20" width="20" alt="void subclass icon"></Image>
+              </Link>
+            </li>
+            <li>
+              <Link className="stasis" href="/blog?filter=stasis&filterCat=subclass">
+                <Image src="/images/stasis.webp" height="20" width="20" alt="stasis subclass icon"></Image>
+              </Link>
+            </li>
+            <li>
+              <Link className="strand" href="/blog?filter=strand&filterCat=subclass">
+                <Image src="/images/strand.webp" height="20" width="20" alt="strand subclass icon"></Image>
               </Link>
             </li>
           </ul>

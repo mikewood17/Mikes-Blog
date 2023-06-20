@@ -50,7 +50,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                   Home
                 </Link>
                 <Link className="nav-link" href="/about">
-                  About
+                  Portfolio
                 </Link>
                 <Link className="nav-link" href="/blog">
                   Builds

@@ -12,28 +12,9 @@ export default function AboutPage() {
           <Image className="meImg" src="/images/about-me.GIF" height="300" width="300" alt="me"></Image>
           <p className="meTxt">
             My Name is Michael Wood and I am training to become a web developer with a focus on front-end web development. I
-            have completed the Netmatters Scion Coalition Bootcamp on full stack web development and now currently studying
-            under Tech Educators learning how to use Next.js.
+            have completed the Netmatters Scion Coalition Bootcamp on full stack web development and the Tech Educators
+            Next.js Bootcamp where I created this very site.
           </p>
-        </div>
-      </div>
-      <div className="banner">
-        <div className="bannerInfo">
-          <div className="bannerContent">
-            <h2>Destiny 2 Builds</h2>
-            <p>
-              One of my biggest passions is gaming, primarily on Destiny 2 created by Bungie. head over to the blog section
-              to have a look at some made by popular content creators in the Destiny 2 community.
-            </p>
-            <div className="bannerActions">
-              <Link href="/blog" className="bannerBtn btn">
-                Builds
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="bannerImgContainer">
-          <Image src="/images/arc-hunter.png" alt="bannerImage" className="bannerImg" width="800" height="800"></Image>
         </div>
       </div>
       <div className="container content contentWidth">
@@ -54,8 +35,27 @@ export default function AboutPage() {
           digital art.
         </p>
       </div>
+
+      <div className="banner">
+        <div className="bannerInfo">
+          <div className="bannerContent">
+            <h2>My Projects</h2>
+            <p>
+              Here you will find my portfolio of projects, some personal and some created whilst on bootcamp courses. I never
+              though a year ago I would be able to create sites like this and now it truly is my passion. This website you're
+              on currently is also a project I created through Next.js and Typescript whilst on a course from{" "}
+              <Link className="colorAccent" href="https://techeducators.co.uk/">
+                Tech Educators
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+        <div className="bannerImgContainer">
+          <Image src="/images/meImg.jpeg" alt="bannerImage" className="bannerImg" width="1000" height="1000"></Image>
+        </div>
+      </div>
       <div className="projectWrapper container content">
-        <h1>My Projects</h1>
         <div className="projectsCont">
           <ul className="projectsList">
             <li>
