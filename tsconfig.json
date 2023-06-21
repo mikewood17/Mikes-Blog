@@ -25,10 +25,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts",
-  "**/*.ts",
-  "**/*.tsx",
-  ".next/types/**/*.ts",
-  ".contentlayer/generated"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".contentlayer/generated",
+    "src/app/api/contact/[contact]/route.ts"
+  ],
   "exclude": ["node_modules"]
 }

@@ -5,7 +5,7 @@ import { getComments, saveComment } from "@/lib/comments";
 
 // Functions
 
-export async function GET(request: NextRequest, { params }: { params: { slug: string } }) {
+export default async function GET(request: NextRequest, { params }: { params: { slug: string } }) {
   //Get All Posts
   const slug = params.slug;
   const comments = await getComments(slug);

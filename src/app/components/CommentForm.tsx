@@ -33,7 +33,9 @@ export default async function CommentForm({ slug, username, saveCommentAction }:
           <textarea name="comment" cols={30} rows={10} className="formControl" />
         </div>
       </div>
-      <FormStatusButton />
+      <div className="block">
+        <FormStatusButton />
+      </div>
     </form>
   );
 }
