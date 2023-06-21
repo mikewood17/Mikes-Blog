@@ -31,7 +31,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated",
-    "src/app/api/contact/[contact]/route.ts"
+    "src/app/api/contact/route.ts"
   ],
   "exclude": ["node_modules"]
 }
