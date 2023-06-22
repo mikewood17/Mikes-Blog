@@ -1,9 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
-  console.log("Data", req.body);
-
-  const { firstName, lastName, email, message } = req.body;
+export async function POST(request: NextRequest, response: NextResponse) {
+  const { firstName, lastName, email, message } = request.body;
 
   const messageData = {
     from: "Contact Form <mike.wood170697@gmail.com>",
@@ -17,5 +15,5 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     `,
   };
 
-  res.status(200).json({ submitted: true });
+  return NextResponse.json({ submitted: true });
 }
