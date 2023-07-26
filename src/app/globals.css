@@ -76,8 +76,8 @@ textarea {
   background: linear-gradient(0deg, rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.5)), url(../../public/images/header-img.webp);
   min-width: 100%;
   background-color: rgb(6, 110, 110);
-  height: 800px;
-  object-fit: contain;
+  height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -197,6 +197,10 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 35px;
+}
+
+.block label {
+  margin-bottom: 5px;
 }
 
 .formHeaderContainer {
@@ -618,9 +622,9 @@ h2 {
   margin-top: 60px;
 
   background: linear-gradient(0deg, rgba(27, 27, 27, 0.6), rgba(27, 27, 27, 0.5)), url(../../public/images/footer-img.jpg);
-
+  background-size: cover;
   background-color: rgb(6, 110, 110);
-  height: 300px;
+  height: 50vh;
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: 50% 70%;
